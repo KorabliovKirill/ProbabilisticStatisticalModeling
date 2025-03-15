@@ -1,6 +1,24 @@
 #include <iostream>
 
+class Point {
+private:
+	double X;
+	double Y;
+public:
+	Point(double X, double Y) : X(X), Y(Y) {};
+
+	double GetX() {
+		return this->X;
+	}
+
+	double GetY() {
+		return this->Y;
+	}
+};
+
 int main() {
-	std::cout << "Start of Project\n";
-	return 0;
+	Point A(1.0, 2.0);
+
+	std::cout << A.GetX() << std::endl;
+	std::cout << A.GetY() << std::endl;
 }
